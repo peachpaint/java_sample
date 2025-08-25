@@ -3,12 +3,12 @@ package ch04;
 public class CircleDemo {
 
 	public static void main(String[] args) {
-		Circle c = new Circle();
+//		Circle c = new Circle();
 
-		c.setRedius(10);
+//		c.setRedius(10);
 //		System.out.println(c.radius);
-		System.out.println("원의 반지름는" + c.getRadius());
-		System.out.println("원의 반지름는" + c.findArea());
+//		System.out.println("원의 반지름는" + c.getRadius());
+//		System.out.println("원의 반지름는" + c.findArea());
 
 		Circle c1 = new Circle(2);
 		System.out.println("원의 반지름는" + c1.getRadius());
@@ -28,18 +28,14 @@ public class CircleDemo {
 
 class Circle {
 	// 멤버-필드
-	private double radius;
+	private double radius;// 캡슐화
 
 	// 생성자
-	public Circle() {
-
-	}// 디폴트 생성자
-
-	public Circle(double r) {
-		if (r > 0) {
-			this.radius = r;
+	public Circle(double radius) {
+		if (radius > 0) {
+			this.radius = radius;
 		}
-	}// r값 지정한 생성자
+	}
 
 	// Getter
 	public double getRadius() {
@@ -48,7 +44,7 @@ class Circle {
 	}
 
 	// Setter
-	public void setRedius(double r) {
+	public void setRadius(double r) {
 		if (r <= 0) {
 			System.out.println("원의 반지름은 0 보다 커야 됩니다.");
 		}

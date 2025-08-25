@@ -1,12 +1,12 @@
-package ch04.sec06;
+package ch04;
 
 public class PersonDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		Person p = new Person() {
-//			p.setAge(21).setName("민국").setNationality("대한민국")
-//		}
+		Person p = new Person();
+		p.setAge(21).setName("민국").setnationality("대한민국").sayHellow();
+
 	}
 
 }
@@ -14,7 +14,7 @@ public class PersonDemo {
 class Person {
 	private String name;
 	private int age;
-	private String nationality;
+	private String nationality;// 캡슐화
 
 	public Person setName(String Name) {
 		this.name = name;

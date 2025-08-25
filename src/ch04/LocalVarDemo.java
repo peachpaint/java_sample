@@ -12,6 +12,6 @@ public class LocalVarDemo {
 
 			System.out.println(e);
 		}
-	}
+	}// 여기 안에 선언된 모든 변수는 전부 지역변수
 
 }

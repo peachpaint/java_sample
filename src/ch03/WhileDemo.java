@@ -4,8 +4,8 @@ public class WhileDemo {
 
 	public static void main(String[] args) {
 		// 밑의 반복문의 횟수를 한 번에 변경 할 수 있는 프로그램 수정
-		int count = 2;
-		// 초기식
+		int count = 5;
+//		 초기식
 		int i = 0;
 		while (i < count) {
 			// 반복실행문

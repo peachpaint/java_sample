@@ -4,7 +4,7 @@ public class CircleDemo {
 
 	public static void main(String[] args) {
 		Circle c1 = new Circle();
-		c1.info();
+		c1.info();// 생성자 선언 및 호출
 		Circle c2 = new Circle(10.0);
 		c2.info();
 		Circle c3 = new Circle("빨강");
@@ -17,15 +17,15 @@ public class CircleDemo {
 }
 
 class Circle {
-	double radius;
-	String color;
+	double radius;// 필드
+	String color;// 변수선언 , 필드
 
 	public Circle() {
-		this(1.0, "노랑");// 생선자를 다른 코드 보다 가장먼저 입력해야 함
+		this(1.0, "노랑");// 생성자를 다른 코드 보다 가장먼저 입력해야 함
 		this.radius = 1.0;
 		this.color = "노량";
 
-	}
+	}//
 
 	public Circle(double radius) {
 //		this.radius = radius;
